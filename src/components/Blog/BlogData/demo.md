@@ -1,4 +1,4 @@
-# h1 **titulo** grandee -#
+<!-- # h1 **titulo** grandee -#
 
 ## h2 **titulo** grandee
 
@@ -117,8 +117,8 @@ ReactDOM.render(
 
 ## Crear y anidarListas
 
--sdsds  
--sdfsdf &nbsp; &nbsp;  
+-sdsds
+-sdfsdf &nbsp; &nbsp;
 -ssd &nbsp;&nbsp;
 
 - Revenue was off the chart.
@@ -156,4 +156,4 @@ ReactDOM.render(
 
 ---
 
-hr -> "---"
+hr -> "---" -->

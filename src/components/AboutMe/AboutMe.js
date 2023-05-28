@@ -2,22 +2,18 @@ import { useState } from 'react';
 import hero from '../../assets/me.webp';
 import styles from './AboutMe.module.css';
 import { constants } from '../../utils/constants';
+import CVDocument from '../../assets/cv-olsi-aliaj.pdf';
 
 const skills = [
-  {
-    name: 'CSS',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
-    href: 'https://www.w3schools.com/css/',
-  },
-  {
-    name: 'Git',
-    img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
-    href: 'https://git-scm.com/',
-  },
   {
     name: 'HTML',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
     href: 'https://www.w3.org/html/',
+  },
+  {
+    name: 'CSS',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+    href: 'https://www.w3schools.com/css/',
   },
   {
     name: 'Javascript',
@@ -25,29 +21,70 @@ const skills = [
     href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
   },
   {
+    name: 'React',
+    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+    href: 'https://reactjs.org/',
+  },
+  {
+    name: 'PHP',
+    img: 'https://www.vectorlogo.zone/logos/php/php-icon.svg',
+    href: 'https://www.php.net/',
+  },
+  {
+    name: 'Microsoft Sql Server',
+    img: 'https://cyclr.com/wp-content/uploads/2022/03/ext-550.png',
+    href: 'https://www.microsoft.com/en-us/sql-server/sql-server-downloads',
+  },
+  {
     name: 'MySQL',
     img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
     href: 'https://www.mysql.com/',
-  },
-  {
-    name: 'NodeJS',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg',
-    href: 'https://nodejs.org',
   },
   {
     name: 'Postman',
     img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
     href: 'https://postman.com',
   },
+
   {
-    name: 'Python',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
-    href: 'https://www.python.org',
+    name: 'Git',
+    img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
+    href: 'https://git-scm.com/',
   },
   {
-    name: 'React',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
-    href: 'https://reactjs.org/',
+    name: 'Docker',
+    img: 'https://www.vectorlogo.zone/logos/docker/docker-icon.svg',
+    href: 'https://www.docker.com/',
+  },
+  {
+    name: 'GitHub',
+    img: 'https://www.vectorlogo.zone/logos/github/github-icon.svg',
+    href: 'https://github.com/',
+  },
+  {
+    name: 'Bitbucket',
+    img: 'https://www.vectorlogo.zone/logos/bitbucket/bitbucket-icon.svg',
+    href: 'https://bitbucket.org/',
+  },
+  {
+    name: 'Figma',
+    img: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+    href: 'https://www.figma.com/',
+  },
+  {
+    name: 'Wordpress',
+    img: 'https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg',
+    href: 'https://wordpress.org/',
+  },
+  {
+    name: 'shopify',
+    img: 'https://www.vectorlogo.zone/logos/shopify/shopify-icon.svg',
+    href: 'https://www.shopify.com/',
+  },
+  {
+    name: 'BigCommerce',
+    img: 'https://www.vectorlogo.zone/logos/bigcommerce/bigcommerce-icon.svg',
+    href: 'https://www.bigcommerce.com/',
   },
   {
     name: 'Bootstrap',
@@ -55,74 +92,54 @@ const skills = [
     href: 'https://getbootstrap.com',
   },
   {
-    name: 'Java',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
-    href: 'https://www.java.com',
+    name: 'Sass',
+    img: 'https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg',
+    href: 'https://sass-lang.com/',
   },
   {
-    name: 'Materialize',
-    img: 'https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg',
-    href: 'https://materializecss.com/',
+    name: 'Json',
+    img: 'https://www.vectorlogo.zone/logos/json/json-ar21.svg',
+    href: 'https://www.json.org/json-en.html',
   },
   {
-    name: 'React Native',
-    img: 'https://reactnative.dev/img/header_logo.svg',
-    href: 'https://reactnative.dev/',
+    name: 'Jira Software',
+    img: 'https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg',
+    href: 'https://www.atlassian.com/software/jira',
   },
   {
-    name: 'Redux',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg',
-    href: 'https://redux.js.org',
-  },
-  {
-    name: 'Webpack',
-    img: 'https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg',
-    href: 'https://webpack.js.org',
+    name: 'WLanguage',
+    img: 'https://windev.com/storage/en_US/img/wlanguage/logo-wlanguage.png',
+    href: 'https://help.windev.com/en-US/?9000196&name=wlanguage',
   },
 ];
 function About() {
   return (
     <div className={styles.me}>
-      <h2>Quien soy y mas sobre mi</h2>
+      <h2>Who am I and more about me?</h2>
       <p>
-        Me llamo Antonio Ayola soy un desarrollador de Software de México con
-        gran afición al mundo Tecnológico, autodidacta y apasionado por aprender
-        más todos los días sobre nuevas tecnologias. <br />
-        <br />A lo largo de mi aventura en el mundo del desarrollo web, me
-        involucre en el desarrollo de varios proyectos, proponiéndome retos, los
-        cuales me enseñaron a corregir mis propios errores al desarrollar
-        software.
+        Hello! I am Olsi Aliaj, a dedicated and passionate Web Developer with a
+        strong background in business informatics and computer science. I am
+        driven by a deep passion for problem-solving and the thrill of
+        overcoming technical challenges. With expertise in both front-end and
+        back-end development, I strive to create exceptional user experiences
+        and contribute to the advancement of web technologies.
       </p>
-      <h2>Trayectoria</h2>
+      <h2>Career Goals and Aspirations</h2>
       <p>
-        Experiencia en dirección de equipos pequeños y en la participación de
-        todo proceso de una aplicación (desde el planteamiento inicial,
-        extracción de funcionalidades necesarias, desarrollo, pruebas y
-        evolución).
-        <br /> <br />
-        Busco ampliar mis conocimientos en la programación y obtener experiencia
-        formando parte de un productivo y exitoso equipo. Tengo habilidad para
-        adaptarme rapido a otras tecnologias. Estoy buscando un proyecto
-        adecuado a mis habilidades que me permita desarrollarme, que me ponga
-        nuevos retos y nuevos aprendizajes.
-        <br /> <br />I have a basic level of english, knowing the necessary for
-        communication, as well as consume documentation content in this
-        language.
+        Looking ahead, I am eager to be a part of projects that involve
+        innovative technologies and have a positive impact on users lives. I am
+        constantly seeking opportunities to further enhance my skills and stay
+        up to date with the latest trends in web development. By incorporating
+        new tools and techniques, I aim to create compelling digital experiences
+        that drive business success and exceed user expectations.
       </p>
-      <h2>Intereses y Hobbies</h2>
+      <h2>Interests and Hobbies</h2>
       <p>
-        Interesado en aprender más sobre testing, principios de clean code,
-        mejorar mi ingles y escalabilidad en general.
-        <br /> En mi tiempo suelo tocar la guitarra 🎸, armar cubos rubik{' '}
-        <img
-          src="https://img.icons8.com/ios/20/000000/rubiks-cube.png"
-          alt="rubik"
-        />{' '}
-        , hacer{' '}
-        <a href={constants.profilesUrls.instagram} title="Instagram Profile">
-          origami
-        </a>{' '}
-        🪁 y jugar videojuegos 🎮.
+        Beyond my professional pursuits, I find joy in various outdoor
+        activities. Whether it is swimming, mountain climbing, or cycling
+        off-road, these hobbies allow me to recharge and bring a fresh
+        perspective to my work. They also highlight my adventurous spirit,
+        determination, and ability to push boundaries.
       </p>
     </div>
   );
@@ -131,7 +148,7 @@ function About() {
 function Skills() {
   return (
     <>
-      <h2>Habilidades – Tecnologías - Herramientas</h2>
+      <h2>Skills – Technologies - Tools</h2>
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (
           <a
@@ -151,176 +168,59 @@ function Skills() {
   );
 }
 
-function Education() {
+function CoreValues() {
   return (
-    <div className={styles.educationSection}>
-      <h2>Ingeniería en Software (2015-2019) (Titulado)</h2>
-      <h4>Universidad Politécnica de Pachuca</h4>
-      <span>
-        Universidad Politécnica de Pachuca - Carretera Pachuca – Ciudad Sahagún
-        Km. 20, Ex-Hacienda de Santa Bárbara, 43830
-      </span>
+    <div className={styles.me}>
+      <h2>Core Values and Principles</h2>
       <p>
-        Durante mis estudios en la UPP obtuve capacidad de responsabilidad,
-        esfuerzo y sacrificio, forme parte de equipos de trabajo y trabaje en
-        proyectos de IA.
+        I am known for my fast learning abilities, attention to detail, and
+        strong problem-solving skills. I believe in the power of enthusiasm and
+        its ability to drive excellence. Additionally, I thrive in collaborative
+        environments and understand the importance of teamwork in achieving
+        remarkable results.
       </p>
     </div>
   );
 }
 
-function Studies() {
+function Conclusion() {
   return (
-    <>
-      <h2>Certificados y cursos</h2>
-      <ul className={styles.studiesContainer}>
-        <li>
-          <a
-            title="Certificado Ingles"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.inglesB1}
-          >
-            • Ingles B1 MCER - CENLEX IPN - 11 de Enero 2022
-          </a>
-        </li>
-        <li>
-          <a
-            title="Titulo Ing. en Software"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.ingSoftware}
-          >
-            • Titulo Ing. en Software - UPP - 17 de Enero 2020
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado Ingles"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.inglesC1}
-          >
-            • EF SET English Certificate 70/100 (C1 Advanced) - EF Standard
-            English Test (EF SET) - 06 de Octubre 2022
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado SCRUM"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.scrumStudy}
-          >
-            • Scrum Fundamentals Certified - SCRUMstudy - 29 de Enero 2023
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado Frontend"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.frontendDeveloper}
-          >
-            • Curso de Frontend Developer - Platzi
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado SCRUM"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.scrum}
-          >
-            • Curso de SCRUM - Linkedin
-          </a>
-        </li>
-
-        <li>
-          <a
-            title="Certificado Fundamentos ing."
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.ingDeSoftware}
-          >
-            • Curso de Fundamentos de Ingeniería de Software - Platzi
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado Algoritmos"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.algoritmosPensamientoLogico}
-          >
-            • Algoritmos y Pensamiento Lógico - Platzi
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado Computación"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.computacionBasica}
-          >
-            • Curso de Computación Básica - Platzi
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado API REST"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.introduccionAPIRest}
-          >
-            • Curso de Introducción a API REST - EDTeam
-          </a>
-        </li>
-        <li>
-          <a
-            title="Certificado GIT"
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.git}
-          >
-            • Curso de GIT - Udemy
-          </a>
-        </li>
-        {/*  <li>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={constants.cursos.IntroduccionAPIRest}
-          >
-            • Escuela Js - Platzi - 20%
-          </a>
-        </li> */}
-      </ul>
-    </>
+    <div className={styles.me}>
+      <h2>Consclusion</h2>
+      <p>
+        Thank you for taking the time to learn more about me. I am excited about
+        the prospect of contributing my skills and expertise to meaningful
+        projects that align with my passion for web development. If you are
+        looking for a dedicated and adaptable team player with a strong drive
+        for success, I would love to connect with you.
+      </p>
+    </div>
   );
 }
+
 function CV() {
   return (
-    <>
-      <h2>CV Privado</h2>
-      <p>Dirigete a la sección de contacto.</p>
-      <button type="button" className="boxShadow" disabled>
-        DESCARGA CV
-      </button>
-    </>
+    <a
+      className="Contact_submitBtn__duqtY btnShadow"
+      href={CVDocument}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Click here to view my CV
+    </a>
   );
 }
-function Experience() {
-  return (
-    <>
-      <h2>Privado</h2>
-      <p>Dirigete a la sección de contacto.</p>
-      <button type="button" className="boxShadow" disabled>
-        Timeline...
-      </button>
-    </>
-  );
-}
+
+// function Experience() {
+//   return (
+//     <div className={styles.me}>
+//       <h2>Who am I and more about me?</h2>
+//       <ul className={styles.navLinks}>
+//         <li className="home">homee</li>
+//       </ul>
+//     </div>
+//   );
+// }
 
 function AboutMe() {
   const [activeSection, setActiveSection] = useState(0);
@@ -328,15 +228,11 @@ function AboutMe() {
     <section className={styles.aboutMe} id="about">
       <div className={styles.aboutContainer}>
         <div className={styles.AboutLeft}>
-          <span>Actualizado el 5 de Marzo, 2022</span>
+          <span>Updated on May 23, 2023</span>
           <div className={styles.leftImg}>
-            <img
-              src={hero}
-              alt="antonio Ayola Profile"
-              className={styles.img}
-            />
-            <h1>{'<Antonio Ayola/>'}</h1>
-            <a
+            <img src={hero} alt="Olsi Aliaj Profile" className={styles.img} />
+            <h1>{'<Olsi Aliaj/>'}</h1>
+            {/* <a
               title="Buy me a coffe"
               className={styles.supportBtn}
               href={constants.profilesUrls.buymeacoffee}
@@ -344,12 +240,12 @@ function AboutMe() {
               rel="noreferrer noopener"
             >
               APOYAME
-            </a>
+            </a> */}
             {/* <button className={styles.supportBtn} type="button">
               APOYAME
             </button> */}
-            <p>Desarrollo software con ❤️ y ☕️</p>
-            <p> &#x1F1F2;&#x1F1FD;</p>
+            {/* <p>Desarrollo software con ❤️ y ☕️</p>
+            <p> &#x1F1F2;&#x1F1FD;</p> */}
           </div>
         </div>
         <div className={styles.AboutRight}>
@@ -383,34 +279,35 @@ function AboutMe() {
                   type="button"
                   onClick={() => setActiveSection(2)}
                   className={styles.tabBtn}
-                  aria-label="formación"
+                  aria-label="CoreValues"
                 >
-                  formación
+                  Core Values
                 </button>
                 {/* <span className={styles.divider}>|</span> */}
               </li>
-              <li className={activeSection === 3 ? styles.active : null}>
+              {/* <li className={activeSection === 3 ? styles.active : null}>
                 <button
                   type="button"
                   onClick={() => setActiveSection(3)}
                   className={styles.tabBtn}
-                  aria-label="certificados"
+                  aria-label="experience"
                 >
-                  Certificados
+                  experience
                 </button>
-                {/* <span className={styles.divider}>|</span> */}
-              </li>
+                { <span className={styles.divider}>|</span> }
+              </li> */}
               <li className={activeSection === 4 ? styles.active : null}>
                 <button
                   type="button"
                   onClick={() => setActiveSection(4)}
                   className={styles.tabBtn}
-                  aria-label="experiencia"
+                  aria-label="Conclusion"
                 >
-                  Experiencia
+                  Conclusion
                 </button>
                 {/* <span className={styles.divider}>|</span> */}
               </li>
+
               <li className={activeSection === 5 ? styles.active : null}>
                 <button
                   type="button"
@@ -431,9 +328,9 @@ function AboutMe() {
           <div className={styles.tabContent}>
             {activeSection === 0 && <About />}
             {activeSection === 1 && <Skills />}
-            {activeSection === 2 && <Education />}
-            {activeSection === 3 && <Studies />}
-            {activeSection === 4 && <Experience />}
+            {activeSection === 2 && <CoreValues />}
+            {/* {activeSection === 3 && <Experience />} */}
+            {activeSection === 4 && <Conclusion />}
             {activeSection === 5 && <CV />}
           </div>
         </div>

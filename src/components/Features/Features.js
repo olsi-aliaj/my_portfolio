@@ -18,8 +18,8 @@ function Features() {
             isInViewportOnce ? 'useSlideInLeft' : 'useSlideInLeftEnter'
           }`}
         >
-          <h4>Habilidades</h4>
-          <h1>Que hago</h1>
+          <h4>Skills</h4>
+          <h1>What I do</h1>
         </div>
         <div className={styles.contentGrid}>
           {data.map((feature, index) => (

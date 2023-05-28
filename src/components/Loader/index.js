@@ -1,7 +1,7 @@
 function Loader() {
   return (
     <div className="loadingLabel-container">
-      <div className="loadingLabel">Cargando...</div>
+      <div className="loadingLabel">Loading...</div>
     </div>
   );
 }

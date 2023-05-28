@@ -28,6 +28,7 @@ function ModalCard({ data }) {
   }, []);
   return (
     <div className={styles.modalContainer}>
+      var a = function b(){};
       <h1>
         {id}.-{`   ${title}`}
       </h1>
@@ -39,10 +40,6 @@ function ModalCard({ data }) {
             {tag}
           </span>
         ))}
-      </div>
-
-      <div className={styles.modalImg}>
-        <img width="1000px" height="500px" src={img} alt="" />
       </div>
       <div className={styles.header}>
         <div className={styles.avatar}>

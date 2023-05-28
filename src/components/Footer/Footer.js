@@ -37,15 +37,15 @@ const Footer = () => {
           </div>
           <p>
             {' '}
-            💻 - Construido por{' '}
+            💻 - Built by{' '}
             <button
               type="button"
               onClick={() => setModal(true)}
               className={styles.userBtn}
             >
-              @AntonioAyola{' '}
+              @OlsiAliaj{' '}
             </button>{' '}
-            con 🖤 en 2022 &#x1F1F2;&#x1F1FD;
+            with 🖤 in 2023
           </p>
           <img src={line} alt="" className={styles.svg} />
           <img src={line} alt="" className={styles.svg} />
@@ -53,8 +53,8 @@ const Footer = () => {
           <img src={line} alt="" className={styles.svg} />
 
           <button
-            title="Regresar arriba"
-            name="Regresar arriba"
+            title="Back to top"
+            name="Back to top"
             type="button"
             className={styles.floatBtn}
             onClick={scrollTop}
@@ -62,17 +62,6 @@ const Footer = () => {
             <i className="fas fa-angle-double-up" />
           </button>
         </div>
-        <p className={styles.visitas}>
-          Num. Visitas
-          <img
-            width="20px"
-            height="10px"
-            src="https://counter1.stat.ovh/private/contadorvisitasgratis.php?c=1am2er4yl9uq6du4qfz5hdqc3enw75xt"
-            border="0"
-            title="contador de visitas"
-            alt="contador de visitas"
-          />
-        </p>
       </footer>
     </>
   );

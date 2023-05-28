@@ -102,60 +102,46 @@ const Header = () => {
               width="200px"
               height="50px"
               src={logo1}
-              alt="<AntonioAyola/>"
+              alt="<OlsiAliaj/>"
               className={styles.logo}
             />
           </button>
           <ul className={styles.navLinks}>
             <li className="home">
-              <a title="inicio" href="#!" onClick={() => handleLink('home')}>
-                inicio
+              <a title="Home" href="#!" onClick={() => handleLink('home')}>
+                home
               </a>
             </li>
             <li className="features">
               <a
-                title="habilidades"
+                title="Skills"
                 href="#!"
                 onClick={() => handleLink('features')}
               >
-                habilidades
+                Skills
               </a>
             </li>
-            <li className="portfolio">
+            <li className="Portfolio">
               <a
-                title="portafolio"
+                title="Portfolio"
                 href="#!"
                 onClick={() => handleLink('portfolio')}
               >
-                portafolio
+                Portfolio
               </a>
             </li>
             <li className="about">
-              <a title="SOBRE MI" href="#!" onClick={() => setModal(true)}>
-                SOBRE MI
-              </a>
-            </li>
-            <li className="clients">
-              <a
-                title="Recomendaciones"
-                href="#!"
-                onClick={() => handleLink('clients')}
-              >
-                Recomendaciones
-              </a>
-            </li>
-            <li className="blog">
-              <a title="blog" href="#!" onClick={() => handleLink('blog')}>
-                blog
+              <a title="About me" href="#!" onClick={() => setModal(true)}>
+                about me
               </a>
             </li>
             <li className="contact">
               <a
-                title="contacto"
+                title="Contact"
                 href="#!"
                 onClick={() => handleLink('contact')}
               >
-                contacto
+                contact
               </a>
             </li>
             <li>
@@ -172,27 +158,6 @@ const Header = () => {
                 APOYAME
               </button>
             </li> */}
-            {isReadyForInstall ? (
-              <li>
-                <button
-                  className={styles.homeBtn}
-                  type="button"
-                  onClick={() => downloadApp(true)}
-                >
-                  Instalar APP
-                </button>
-              </li>
-            ) : (
-              <li>
-                <button
-                  className={styles.homeBtn}
-                  type="button"
-                  onClick={() => setModal(true)}
-                >
-                  VER MAS
-                </button>
-              </li>
-            )}
           </ul>
           {/*  {Mobile && ( */}
           {true && (
@@ -202,41 +167,41 @@ const Header = () => {
               }`}
             >
               <li className="home">
-                <a title="inicio" href="#!" onClick={() => handleLink('home')}>
-                  inicio
+                <a title="Home" href="#!" onClick={() => handleLink('home')}>
+                  home
                 </a>
               </li>
               <li className="features">
                 <a
-                  title="habilidades"
+                  title="Skills"
                   href="#!"
                   onClick={() => handleLink('features')}
                 >
-                  habilidades
+                  skills
                 </a>
               </li>
               <li className="portfolio">
                 <a
-                  title="portafolio"
+                  title="Portfolio"
                   href="#!"
                   onClick={() => handleLink('portfolio')}
                 >
-                  portafolio
+                  portfolio
                 </a>
               </li>
               <li className="about">
                 <a
-                  title="sobre mi"
+                  title="About me"
                   href="#!"
                   onClick={() => {
                     setMobile(false);
                     setModal(true);
                   }}
                 >
-                  sobre mi
+                  about me
                 </a>
               </li>
-              <li className="Recomendaciones">
+              {/* <li className="Recomendaciones">
                 <a
                   title="contacto"
                   href="#!"
@@ -244,35 +209,36 @@ const Header = () => {
                 >
                   Recomendaciones
                 </a>
-              </li>
-              <li className="blog">
+              </li> */}
+              {/* <li className="blog">
                 <a title="blog" href="#!" onClick={() => handleLink('blog')}>
                   blog
                 </a>
-              </li>
-              <li className="contact">
+              </li> */}
+              {/* <li className="contact">
                 <a
-                  title="contacto"
+                  title="contact"
                   href="#!"
                   onClick={() => handleLink('contact')}
                 >
-                  contacto
+                  contact
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a title="config" href="#!" onClick={() => handleOpen()}>
                   <i className={styles.cogBtn} title="Theme Config" />
                 </a>
               </li>
 
-              {isReadyForInstall ? (
+              {/* Butoni instalimit */}
+              {/* {isReadyForInstall ? (
                 <li>
                   <button
                     className={styles.homeBtn}
                     type="button"
                     onClick={() => downloadApp(true)}
                   >
-                    Instalar APP
+                    Instll APP
                   </button>
                 </li>
               ) : (
@@ -285,10 +251,10 @@ const Header = () => {
                       setModal(true);
                     }}
                   >
-                    VER MAS
+                    Install App
                   </button>
                 </li>
-              )}
+              )} */}
             </ul>
           )}
 
@@ -296,8 +262,8 @@ const Header = () => {
             className={Mobile ? styles.closeBtn : styles.openBtn}
             onClick={toogleMobileNav}
             type="button"
-            title="Abrir Menu Lateral"
-            name="Abrir Menu Lateral"
+            title="Menu"
+            name="Menu"
           >
             <i
               className={

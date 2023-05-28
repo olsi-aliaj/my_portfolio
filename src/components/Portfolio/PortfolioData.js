@@ -11,178 +11,87 @@ const data = [
     id: 1,
     year: '2022',
     date: '16/3/2022',
-    category: 'WEB DESIGN',
-    title: 'Mi Portafolio',
-    image: 'portafolio.webp',
-    technologies: [
-      'PWA',
-      'React',
-      'CSS Modules',
-      'Responsive',
-      'Neumorphism',
-      'Netlify',
-      'Markdown',
-      'HTML',
-      'JS',
-      'react-transition-group',
-      'Formspree',
-      'Eslint',
-      'Prettier',
-    ],
-    desc: `Mi sitio web personal estilo Neumorfismo.
-     Este proyecto me tomo mucho trabajo solo para poder expresar lo que hago y lo que me gusta hacer. 
-     Este portafolio es una PWA, asi que puedes instalar la aplicacion en tu dispositivo.
-    
-     Ademas viene con un pequeño blog usando markdown. Espero que te guste <3.`,
-    links: {
-      code: 'https://github.com/Tono2007/portafolio',
-      page: 'https://antonioayola.netlify.app/',
-    },
+    category: 'Backend',
+    title: 'e-Aktet',
+    image: 'eaktet.png',
+    technologies: [],
+    desc: `The government staff system project aimed to revolutionize and streamline the internal operations and processes within government institutions. As a key contributor to this project, I focused on developing a comprehensive and user-friendly system that would enhance productivity and collaboration among government staff members.Working closely with government officials and stakeholders, I conducted in-depth analysis of existing workflows and identified areas for improvement. Leveraging my expertise in system design and development, I crafted a robust and scalable solution tailored to the specific needs and requirements of the government staff.`,
+    links: {},
   },
   {
     id: 2,
     year: '2022',
     date: '21/3/2022',
-    category: 'DEVELOPMENT',
-    title: 'Cars Landing Page',
-    image: 'carsLandingPage.webp',
-    technologies: [
-      'Webpack',
-      'Yarn',
-      'Sass(scss)',
-      'Babel',
-      'BEM',
-      'SwiperJs',
-      'Github Pages',
-      'Github Actions',
-      'Responsive',
-      'HTML',
-      'CSS',
-      'JS',
-    ],
-    desc: `Este proyecto es una landing page con tematica de carros algo simple, me sirvio principalmente para practicar y entender mejor webpack, antes de pasar a esbuild con Vite D:
-    Tambien para ver como funciona sass junto con la metodologia BEM, implementar un efecto parallax de otra manera y un slider con SwiperJs.
-    Esta vez lo subi a Github Pages, usando github actions, creando un pequeño workflow que crea el build y lo mueve a la rama de gh-pages para el deploy.`,
-    links: {
-      code: 'https://github.com/Tono2007/CarsLandingPage',
-      page: 'https://tono2007.github.io/CarsLandingPage/',
-    },
+    category: 'Frontend',
+    title: 'Justrite',
+    image: 'justrite.png',
+    technologies: [],
+    desc: `This project is an e-commerce store dedicated to manufacturing industrial and environmental safety products that are designed to promote workplace safety compliance. To create a professional and trustworthy online shopping experience, I developed a visually appealing and user-friendly interface. The design incorporates a clean and intuitive layout, allowing customers to easily browse through different categories of safety products. Clear product descriptions, specifications, and high-resolution images help customers make informed purchasing decisions. The website incorporates a secure payment gateway to ensure safe transactions, protecting sensitive customer information. `,
+    links: {},
   },
   {
     id: 3,
-    year: '2022',
-    date: '10/4/2022',
-    category: 'APPLICATION',
-    title: 'MoviesApp',
-    image: 'movieApp.webp',
-    technologies: [
-      'ReactJs',
-      'Material-ui (MUI)',
-      'HTML',
-      'CSS',
-      'JS',
-      'SwiperJs',
-      'Vercel',
-      'Responsive',
-      'TMBD',
-      'Axios',
-      'Moment',
-      'react-router-dom',
-    ],
-    desc: `Este proyecto es un sitio web para navegar entre peliculas y ver detalles de cada una. 
-    Ayudandonos de material-ui(mui) para el diseño y la API de TheMovieDataBase TMDB para obtener información de las peliculas.
-    Fue un proyecto complicado, por el manejo de los datos, principalmente la seccion del buscador; ademas de que el diseño fue completamente pensado por mi.
-    Falta terminar la pestaña de actores y series que seria muy parecida a la de peliculas.
-    El despliegue del sitio esta en vercel, se guarda la clave de la api en variables de ambiente.
-    Me gustaria aprender y mejorar el rendimiento en este proyecto
+    year: '2023',
+    date: '22/12/2022',
+    category: 'Frontend',
+    title: 'Nasco',
+    image: 'nasco.png',
+    technologies: [],
+    desc: `The website features a wide range of protective outwear items, based in USA. For the design, I utilized modern and minimalist aesthetics to ensure a visually appealing and user-friendly experience. I incorporated responsive design principles to guarantee seamless navigation across different devices. To optimize the performance of the website, I implemented various techniques, including image optimization, caching strategies, and lazy loading. These measures ensure fast loading times and an overall smooth browsing experience for visitors.  I also implemented secure payment gateways to ensure a safe and convenient checkout process.
     `,
-    links: {
-      code: 'https://github.com/Tono2007/Movies-App',
-      page: 'https://movies-app-tono2007.vercel.app',
-    },
+    links: {},
   },
   {
     id: 4,
     year: '2022',
     date: '04/5/2022',
-    category: 'WEB DESIGN',
-    title: 'LOL-APP',
-    image: 'lolApp.webp',
-    technologies: [
-      'ReactJs',
-      'Styled-Components',
-      'HTML',
-      'CSS',
-      'JS',
-      'GSAP',
-      'Netlify',
-      'Responsive',
-      'Riot API',
-      'Axios',
-    ],
-    desc: `Este proyecto es una aplicación para consultar jugadores y detalles de los campeones del juego.
-    Ocupando Styled Components para el diseño y la API de RIOT para obtener información de los jugadores.
-    Este proyecto fue práctica para aprender Styled Components y la biblioteca GSAP para las animaciones.
-    La clave que tengo para acceder a la api de riot es limitada, en cuanto numero de peticiones y el tiempo que estara activa, puede presentar errores antes que genere otra.
-    El despliegue del sitio esta en Netlify.
+    category: 'Backend',
+    title: 'e-Albania',
+    image: 'ealbania.png',
+    technologies: [],
+    desc: `The government portal project represents a significant endeavor in transforming traditional public services into efficient and accessible electronic platforms. As part of the project, I focused on the intricate backend development to facilitate seamless operations and ensure optimal functionality. This involved implementing robust data management systems, integrating various databases, and establishing secure user authentication mechanisms.Collaboration with stakeholders and subject matter experts was integral to the success of this project. 
     `,
-    links: {
-      code: null,
-      //page: 'https://lol-app.netlify.app/',
-      page: 'https://master--lol-app.netlify.app/',
-    },
+    links: {},
   },
   {
     id: 5,
     year: '2022',
-    date: '05/11/2022',
-    category: 'WEB DESIGN',
-    title: 'Pokedex',
-    image: 'pokedex.webp',
-    technologies: [
-      'NextJs',
-      'ReactJs',
-      'Tailwind',
-      'HTML',
-      'CSS',
-      'JS',
-      'PropTypes',
-      'Pokeapi',
-      'Vercel',
-      'Responsive',
-      'Axios',
-    ],
-    desc: `La típica aplicación pokedex que todos hacen, principalmente para practicar nextjs y tener mi primer acercamiento con tailwind y testing.
-    Simplemente muestra, busca y guarda tus pokemones ademas de secciones como generaciones y tipos.
-    Puedes encontrar imagenes, nombres y detalles de cada pokemon.
-    Me senti muy comodo con tailwind, el diseño fue totalmente creado por mi.
-    Ante la duda de agregar typescript ocupé proptypes para verificar los tipos de datos.
-    El despliegue del sitio esta en Vercel.`,
-    links: {
-      code: 'https://github.com/Tono2007/pokedex',
-      page: 'https://pokedex-tono2007.vercel.app/',
-    },
+    date: '05/02/2023',
+    category: 'Frontend',
+    title: 'US Water Systems',
+    image: 'usws.jpg',
+    technologies: [],
+    desc: `The website serves as a platform for customers to explore and purchase a wide range of water systems and related products, including water filters, rainwater harvesting systems, efficient irrigation solutions, and water-saving devices. The goal is to provide customers with access to high-quality products that contribute to responsible water usage and environmental sustainability. 
+    To create an engaging and user-friendly online shopping experience, I implemented a visually appealing design with intuitive navigation. The layout is designed to showcase product categories, highlight key features, and provide detailed product information. I incorporated an intuitive search functionality to help customers find specific items easily.`,
+    links: {},
   },
   {
     id: 6,
     year: '2022',
     date: '11/11/2022',
-    category: 'APPLICATION',
-    title: 'React-Libs',
-    image: 'reactLibs.webp',
+    category: 'Backend',
+    title: 'Universiteti i Tiranes',
+    image: 'ut.png',
     technologies: ['ReactJs', 'JS', 'Docusaurus ', 'Vercel', 'Responsive'],
-    desc: `Para este proyecto queria intentar generar una documentación, me encontre con varias herramientas que ya se encargan de un desarrollo rapido para centrarnos en el contenido.
-    Se elijio Docusaurus 2, un moderno generador de sitios estaticos, especializado en documentación ademas de estar construido con React.
-    
-    Utilizando el preset(classic) de Docusaurus fue muy sencillo generar la estructura de documentación. Se puede personalizar el diseño, crear tus componentes y seguir ocupando React, ademas que el contenido se escribe en mdx.
-
-    El tema que se escogio fue generar una base de datos con información util, consejos, guias en el uso de React.
-    Este proyecto fue muy sencillo, el proposito solo fue agregar una herramienta mas a mis conocimientos que en algun momento puede ser util.
+    desc: `The Student Portal for the University of Tirana serves as a centralized digital platform designed to enhance the academic journey and overall student experience. Developed with the specific needs of University of Tirana students in mind, this comprehensive portal offers a wide range of features and functionalities.
+    One of the key aspects of the Student Portal is its ability to provide easy access to essential academic information. Students can conveniently view their class schedules, exam timetables, and academic records. This empowers them to stay organized and plan their studies effectively, ensuring they make the most of their time at the university.
     `,
     links: {
       code: 'https://github.com/Tono2007/React-Libs',
       page: 'https://react-libs.vercel.app/',
     },
+  },
+  {
+    id: 7,
+    year: '2023',
+    date: '11/11/2023',
+    category: 'Backend',
+    title: 'QKB',
+    image: 'qkb.png',
+    technologies: [],
+    desc: `The National Business Center project serves as a comprehensive digital platform dedicated to supporting and streamlining the operations of government institutions responsible for business affairs. Developed with the goal of enhancing efficiency and facilitating a conducive business environment, this project provides a range of services and resources for businesses.At the core of the National Business Center is its commitment to simplifying administrative processes and reducing bureaucratic hurdles.
+    `,
+    links: {},
   },
 ];
 

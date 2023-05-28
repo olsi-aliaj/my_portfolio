@@ -31,9 +31,9 @@ function ModalConfig() {
   };
   return (
     <div className={styles.config}>
-      <h2>Preferencias</h2>
+      <h2>Preferences</h2>
 
-      <h4>Cambia de Modo</h4>
+      <h4>Change mode</h4>
       <div className={styles.switchContainer}>
         <label
           role="presentation"
@@ -56,9 +56,9 @@ function ModalConfig() {
             </div>
           </div>
         </label>
-        <p> {darkMode ? 'Modo Oscuro' : 'Modo Claro'}</p>
+        <p> {darkMode ? 'Dark Mode' : 'Light Mode'}</p>
       </div>
-      <h4>Cambia el color Principal</h4>
+      <h4>Change the main color</h4>
       <div className={styles.colorsContainer}>
         <span
           onClick={changeColor}

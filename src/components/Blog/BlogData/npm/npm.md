@@ -1,4 +1,4 @@
-# **Gestión de Dependencias y Paquetes con NPM**
+<!-- # **Gestión de Dependencias y Paquetes con NPM**
 
 Recien terminé un curso de **NPM** en la plataforma de [PLatzi](https://platzi.com/cursos/npm/) &nbsp;fue un curso sencillo a repaso hago esta publicación.
 
@@ -11,7 +11,7 @@ Es un gestor de paquetes por defecto para Node.js, el más popular que tiene Jav
 ### **Primeros Pasos**
 
 - Instalar [NodeJs](https://nodejs.org/es/). Node.js trae integrado npm con su instalación
-- Podemos también verificar si hay versiones más recientes de NPM e instalarlas con el comando  
+- Podemos también verificar si hay versiones más recientes de NPM e instalarlas con el comando
   `npm install -g npm@latest`
 
 ### **Recomendación**
@@ -105,4 +105,4 @@ Este símbolo se llama _virgulilla (En México)_ y se pone con `alt + 126`
 
 **`>=`** Versión mayor o igual a la indicada.
 
-![ff](https://blog.desdelinux.net/wp-content/uploads/2020/10/NPM.jpg.webp)
+![ff](https://blog.desdelinux.net/wp-content/uploads/2020/10/NPM.jpg.webp) -->

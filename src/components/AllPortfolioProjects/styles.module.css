@@ -44,13 +44,13 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.5s;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--textSecondary);
-  margin: .3125rem .125rem;
-  padding: .5rem .625rem;
+  margin: 0.3125rem 0.125rem;
+  padding: 0.5rem 0.625rem;
 }
 .tabBtn {
   composes: boxShadow from global;
@@ -68,7 +68,7 @@
   border-radius: 1.5625rem;
   left: 0;
   width: 0;
-  height: .125rem;
+  height: 0.125rem;
   background: var(--primaryColor);
 }
 .tabs li.active button::after {

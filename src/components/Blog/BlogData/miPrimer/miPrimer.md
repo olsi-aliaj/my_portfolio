@@ -1,4 +1,4 @@
-# **Mi primera publicación en este blog!!**
+<!-- # **Mi primera publicación en este blog!!**
 
 # Mi portafolio
 
@@ -32,4 +32,4 @@ Algo complicado que todavia no logro es mostrar imagenes alojadas localmente, po
 A futuro me gustaria agregar algun **modo oscuro** , soporte para el idioma ingles y un sistema de pagos para practicar y aprender, me faltan terminar algunas secciones que son el listado completo del portafolio y blog, si me animo talves un **buscador**.
 Aunque la verdad me gustaria mas empezar nuevas ideas, ya aprendí mucho con este proyecto
 
-Si llegaste hasta aquí... Gracias por leer <3 💻
+Si llegaste hasta aquí... Gracias por leer <3 💻 -->

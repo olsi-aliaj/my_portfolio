@@ -1,6 +1,6 @@
 {
-  "short_name": "Antonio Ayola",
-  "name": "Antonio Ayola Portafolio",
+  "short_name": "Olsi Aliaj",
+  "name": "Olsi Aliaj Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -26,7 +26,7 @@
   "background_color": "#ecf0f3",
   "theme_color": "#66b58f",
   "categories": ["education", "entertainment", "lifestyle", "social"],
-  "description": "Antonio Ayola Portafolio",
+  "description": "Olsi Aliaj Portfolio",
   "dir": "ltr",
   "id": "/v1",
   "lang": "es-MX",
@@ -38,51 +38,37 @@
       "sizes": "2880x4008",
       "type": "image/png",
       "platform": "wide",
-      "label": "Inicio Portafolio"
+      "label": "Home Portfolio"
     }
   ],
   "shortcuts": [
     {
-      "name": "Inicio",
-      "short-name": "Inicio",
+      "name": "Home",
+      "short-name": "Home",
       "icon": "logo96.png",
       "url": "/#home",
-      "description": "Hola mundo"
+      "description": "Hello World"
     },
     {
-      "name": "Habilidades",
-      "short-name": "Habilidades",
+      "name": "Skills",
+      "short-name": "Skills",
       "icon": "logo96.png",
       "url": "/#features",
-      "description": "Que hago"
+      "description": "What I do"
     },
     {
-      "name": "Portafolio",
-      "short-name": "Portafolio",
+      "name": "Portfolio",
+      "short-name": "Portfolio",
       "icon": "logo96.png",
       "url": "/#portfolio",
-      "description": "Visita los pryectos mas recientes de mi portafolio"
+      "description": "Visit the most recent projects in my portfolio"
     },
     {
-      "name": "Testimonios",
-      "short-name": "Testimonios",
-      "icon": "logo96.png",
-      "url": "/#clients",
-      "description": "Que dicen de mi trabajo"
-    },
-    {
-      "name": "Blog",
-      "short-name": "Blog",
-      "icon": "logo96.png",
-      "url": "/#blog",
-      "description": "Visita mi blog y dame feedback"
-    },
-    {
-      "name": "Datos de Contacto",
-      "short-name": "Contacto",
+      "name": "Contact information",
+      "short-name": "Contact",
       "icon": "logo96.png",
       "url": "/#contact",
-      "description": "Trabajemos juntos"
+      "description": "Let's work together"
     }
   ],
   "start_url": "."

@@ -32,8 +32,8 @@ const Portfolio = () => {
               isInViewportOnce ? 'useSlideInLeft' : 'useSlideInLeftEnter'
             }`}
           >
-            <h4>VISITA LOS PROYECTOS MAS RECIENTES DE MI PORTAFOLIO</h4>
-            <h1>Mi Portafolio</h1>
+            <h4>VISIT THE MOST RECENT PROJECTS IN MY PORTFOLIO</h4>
+            <h1>My portfolio</h1>
           </div>
           <button
             type="button"
@@ -41,7 +41,7 @@ const Portfolio = () => {
             onClick={() => setModal(true)}
             aria-label="ver todos los proyectos"
           >
-            VER TODOS LOS PROYECTOS
+            SEE ALL THE PROJECTS
           </button>
           <div className={styles.contentGrid}>
             {/* {PortfolioData.slice(0) //clonar array para poder usar reverse()

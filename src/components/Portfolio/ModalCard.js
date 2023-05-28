@@ -17,10 +17,12 @@ function ModalCard({ project }) {
         </span>
         <h1>{title}</h1>
         <p>{desc}</p>
-        <h4>Tecnologias | Herramientas Usadas | Features </h4>
-        <p>{technologies.map((tech) => `${tech} • `)}</p>
+        {/* Kto jan per teknologjit e perdorura */}
+        {/* <h4>Tecnologias | Herramientas Usadas | Features </h4>
+        <p>{technologies.map((tech) => `${tech} • `)}</p> */}
         <div className={styles.modalActions}>
-          {links.code && (
+          {/* {links.code && (
+            // Linket qe te cojne ne github dhe te faqa per cdo projekt
             <a
               title="github code"
               className={styles.actionBtn}
@@ -41,7 +43,7 @@ function ModalCard({ project }) {
             >
               VISITAR PROYECTO <i className="fas fa-chevron-right" />
             </a>
-          )}
+          )} */}
         </div>
       </div>
     </div>

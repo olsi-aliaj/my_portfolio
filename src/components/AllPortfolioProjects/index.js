@@ -9,21 +9,14 @@ import Card from './Card';
 import PortfolioData from '../Portfolio/PortfolioData';
 import style from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark';
 
-const categories = [
-  'TODOS',
-  'DEVELOPMENT',
-  'WEB DESIGN',
-  'APPLICATION',
-  'DESIGN',
-  'MOBILE',
-];
+const categories = ['All', 'Frontend', 'Backend'];
 
 function Index() {
   const [activeSection, setActiveSection] = useState(0);
   const [projectsList, setProjectsList] = useState(PortfolioData);
 
   function filterProjects(category) {
-    if (category !== 'TODOS') {
+    if (category !== 'All') {
       /* const list = [];
       MyGroupsList.forEach((x) => {
         const groupName = x.nombre_grupo.toLowerCase();
@@ -47,8 +40,8 @@ function Index() {
     <section className={styles.allPortfolio}>
       <div className="container">
         <div className={styles.heading}>
-          <h4>VISITA LOS PROYECTOS DE MI PORTAFOLIO</h4>
-          <h1>Portafolio</h1>
+          <h4>VISIT THE PROJECTS OF MY PORTFOLIO</h4>
+          <h1>Portfolio</h1>
         </div>
         {/* <div className={styles.tagsContainer}>
           <p>Categorias-&gt;</p>
@@ -59,7 +52,7 @@ function Index() {
           <span className={styles.tag}>DESKTOP</span>
         </div> */}
         <div className={styles.tagsContainer}>
-          <p>Filtrar Categorias-&gt;</p>
+          <p className="filter-categories-center">Filter Categories:</p>
           <ul className={styles.tabs}>
             {categories.map((category, index) => (
               <li

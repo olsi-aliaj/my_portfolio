@@ -1,6 +1,6 @@
-# **ECMAScript 6+**
+<!-- # **ECMAScript 6+**
 
-Recien terminé un curso de **ECMAScript** en la plataforma de [PLatzi](https://platzi.com/cursos/ecmascript-6/) &nbsp;fue un curso extenso y algo dificil por eso quiero compartir un resumen.  
+Recien terminé un curso de **ECMAScript** en la plataforma de [PLatzi](https://platzi.com/cursos/ecmascript-6/) &nbsp;fue un curso extenso y algo dificil por eso quiero compartir un resumen.
 La idea es que lo podamos revisar para repasar o recordar algo, tratare de agregar imagenes, links y el código para que sea sencillo de leer.
 
 ---
@@ -76,12 +76,10 @@ Especificación del lenguage propuesto por ECMA Internacional
 Ponemos parámetros por defecto en caso de que no reciba nada.
 
 ```js
-function conDefaultParams(name = 'Antonio', age = '23', gender = 'M') {
+function conDefaultParams(name = 'Olsi', age = '24', gender = 'M') {
   console.log(name, age, gender);
 }
 conDefaultParams();
-// Output: Antonio 23 M //;
-//Imprime los parametros por defecto que asignamos/;
 ```
 
 ### ES6 Template literal (Concatenación)
@@ -106,11 +104,10 @@ Para crear saltos de línea en los strings.
 
 ```js
 /Antes se usaba \n:/;
-let lorem =
-  'texto cualquiera \n' + 'el texto que quiero imprimir enla siguiente línea.';
+let lorem = 'any text \n' + 'the text I want to print on the next line.';
 /ES6:/;
-let lorem = ` texto cualquiera 
-el texto que quiero imprimir en la siguiente línea. `;
+let lorem = `  any text
+the text I want to print on the next line. `;
 ```
 
 ### ES6 Desestructuración de elementos
@@ -119,9 +116,9 @@ La desestructuración de objetos nos permite obtener los valores de los objetos 
 
 ```js
 let person = {
-  name: 'Antonio',
+  name: 'Olsi',
   age: 23,
-  country: 'MX',
+  country: 'Al',
 };
 /Antes de EC6/;
 console.log(person.name, person.age, person.country);
@@ -148,7 +145,7 @@ console.log(familiaCompleta)
 Originalmente teníamos **var** que funcionaba de forma global.
 
 `var` Declara una variable de scope global o local para la función, sin importar el ámbito de bloque.
-Permite **Hoisting.**  
+Permite **Hoisting.**
 `let` Declara una variable de scope global, local para la función o de bloque. Es reasignable y no permite **Hoisting**. `let` Declara variables que sólo son accesibles desde el Scope de la función. A diferencia de `var` que es una variable global.
 
 ```js
@@ -262,7 +259,7 @@ welcome(); // 'Welcome to the jungle'
 
 ### ES6 Generadores
 
-Retorna una serie de valores según el algoritmo definido  
+Retorna una serie de valores según el algoritmo definido
 **yield**: La palabra clave yield detiene la ejecución de la función del generador y el valor de la expresión que sigue a la palabra clave yield se devuelve al llamador del generador. Se puede considerar como una versión basada en un generador de la palabra clave return.
 
 ```js
@@ -377,8 +374,8 @@ También llamadas “final commas”. Es agregar una coma final al último eleme
 
 ##### [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas):
 
-> Pueden ser útiles al agregar nuevos **elementos**, **parámetro**s o **propiedades** al código JavaScript. Si desea agregar una nueva propiedad, puede agregar una nueva línea sin modificar la última línea anterior si esa línea ya usa una coma al final.  
-> Esto hace que las diferencias de control de versiones sean más limpias y la edición de código puede ser menos problemática.  
+> Pueden ser útiles al agregar nuevos **elementos**, **parámetro**s o **propiedades** al código JavaScript. Si desea agregar una nueva propiedad, puede agregar una nueva línea sin modificar la última línea anterior si esa línea ya usa una coma al final.
+> Esto hace que las diferencias de control de versiones sean más limpias y la edición de código puede ser menos problemática.
 > **JavaScript** ha permitido comas finales en los literales de matriz desde el principio, y luego las agregó a objetos literales (ECMAScript 5) y más recientemente (ECMAScript 2017) a parámetros de función.
 
 ```js
@@ -389,7 +386,7 @@ const comma = {
 
 ### ES8 Async Await
 
-Una forma más amigable e intuitiva de entender el código asíncrono en Javascript.  
+Una forma más amigable e intuitiva de entender el código asíncrono en Javascript.
 `Async` es una palabra reservada de JS. Con la preposición `async` convertimos una función en asíncrona que retorna una Promesa.
 Construyendo una función que contiene una promesa con la cual vamos a trabajar nuestros **Async/Await**.
 
@@ -682,7 +679,7 @@ class Message {
 }
 
 const message = new Message();
-message.show('Hola!');
+message.show('Hello!');
 ```
 
 ### ES12 Promise.any()
@@ -778,4 +775,4 @@ Es un grupo de desarrolladores e implementadores que se encargan de revisar toda
 
 #### Hasta aquí mi reporte, Joaquín
 
-Algún día terminare la tabla de contenidos.gracias por leer.
+Algún día terminare la tabla de contenidos.gracias por leer. -->
