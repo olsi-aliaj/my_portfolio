@@ -74,7 +74,7 @@ const Contact = () => {
         }`}
       >
         <h4>CONTACT INFORMATION</h4>
-        <h1>Let&apos;s work togather</h1>
+        <h1>Let&apos;s work together</h1>
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
