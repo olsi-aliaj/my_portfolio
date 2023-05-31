@@ -31,7 +31,6 @@ function Index() {
 
       setProjectsList(list);
     } else {
-      console.log('todos');
       setProjectsList(PortfolioData);
     }
   }

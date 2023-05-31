@@ -33,7 +33,7 @@ const Portfolio = () => {
             }`}
           >
             <h4>VISIT THE MOST RECENT PROJECTS IN MY PORTFOLIO</h4>
-            <h1>My portfolio</h1>
+            <h1>My Portfolio</h1>
           </div>
           <button
             type="button"
@@ -50,9 +50,9 @@ const Portfolio = () => {
               .map((project, index) => (
                 <Card key={index} project={project} />
               ))} */}
-            <Card project={PortfolioData[2]} />
-            <Card project={PortfolioData[4]} />
-            <Card project={PortfolioData[1]} />
+            <Card project={PortfolioData[3]} />
+            <Card project={PortfolioData[5]} />
+            <Card project={PortfolioData[6]} />
           </div>
         </div>
       </section>

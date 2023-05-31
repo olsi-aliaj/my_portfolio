@@ -46,8 +46,8 @@ function Hero() {
             a
             <Typewriter
               words={[
-                ' Profesional Coder',
                 ' Frontend Developer',
+                ' Profesional Coder',
                 ' Software Developer',
               ]}
               loop={5}
